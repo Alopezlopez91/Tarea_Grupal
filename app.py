@@ -56,7 +56,7 @@ class Transaccion(BaseModel):
 # Definimos el endpoint para predicción
 # Definimos una ruta '/prediccion/' que acepta el método POST (envío de datos).
 @app.post("/prediccion/")
-async def predecir_fraude(transaccion: Transaccion): # La función recibe un objeto tipo 'Transaccion'.
+async def predecir_muerte_por_insuficiencia_cardíaca(transaccion: Transaccion): # La función recibe un objeto tipo 'Transaccion'.
     try:
         # Paso 1: Convertimos el objeto JSON recibido en un DataFrame de Pandas.
         # transaccion.dict() convierte los datos en un diccionario de Python.
